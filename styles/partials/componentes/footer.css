@@ -1,0 +1,29 @@
+/* # colores # */
+.footer__container {
+  background-color: #59114d;
+  position: fixed;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  justify-content: space-between;
+  gap: 10rem;
+}
+.footer__info--title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.footer__info--text {
+  text-align: center;
+}
+.footer__info__info {
+  width: 70%;
+}
+.footer__info__links {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}

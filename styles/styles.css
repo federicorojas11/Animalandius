@@ -1,0 +1,135 @@
+/* # colores # */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh -7.4rem);
+  background-image: url("...");
+  background-position: right;
+}
+.hero__content {
+  display: flex;
+  max-width: 40%;
+  flex-direction: column;
+  margin-left: 10rem;
+}
+.hero__content--title {
+  font-size: 7rem;
+}
+.hero__content--descripcion {
+  font-size: 2.2rem;
+}
+
+.testimoniales__container {
+  padding: 10rem;
+}
+
+.testimoniales {
+  display: flex;
+  flex-wrap: wrap;
+}
+.testimoniales .testimonios {
+  flex-wrap: wrap;
+}
+.testimoniales .info__container {
+  background-color: #eee;
+  color: white;
+}
+.testimoniales html {
+  font-size: 62.5%;
+}
+.testimoniales body {
+  min-height: 100vh;
+  background-color: background-color;
+}
+.testimoniales h1 {
+  font-size: 3.2rem;
+}
+.testimoniales h2 {
+  font-size: 3rem;
+}
+.testimoniales h3 {
+  font-size: 2.5rem;
+}
+.testimoniales h4 {
+  font-size: 2.1rem;
+}
+.testimoniales h5 {
+  font-size: 1.7rem;
+}
+.testimoniales a {
+  color: white;
+}
+
+.go-top {
+  position: fixed;
+  bottom: 10rem;
+  right: 5rem;
+  width: 7.5rem;
+  height: 7.5rem;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  background-color: #ece5f0;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.go-top p {
+  color: #eee;
+  font-size: 2rem;
+  text-align: center;
+}
+.go-top:hover {
+  background-color: #012622;
+}
+
+.footer__container {
+  background-color: #59114d;
+  position: fixed;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  justify-content: space-between;
+  gap: 10rem;
+}
+.footer__info--title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.footer__info--text {
+  text-align: center;
+}
+.footer__info__info {
+  width: 70%;
+}
+.footer__info__links {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+.header__container {
+  background-color: #59114d;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.header__logo {
+  transition: all 0.3s ease-out;
+}
+.header__nav--link:hover {
+  color: #003b36;
+}
+
+.container {
+  max-width: 120rem;
+  margin: auto;
+}
