@@ -1,0 +1,158 @@
+@use '../variables/variables' as *;
+@use '../variables/variables' as *;
+
+.animal__header__container {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(236, 103, 103);
+  & ul,
+  ol {
+    list-style: none;
+  }
+  & .nav > li {
+    float: left;
+  }
+
+  & ul.nav {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 2rem;
+    padding: 0.3rem;
+    border-radius: 10%;
+    top: 1rem;
+    background-color: rgba(0, 0, 0, 0.384);
+    transition: 550ms;
+    &:hover {
+      background-color: rgba(18, 97, 24, 0.205);
+    }
+  }
+
+  & .nav li a {
+    transition: 400ms;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+  }
+
+  & .nav li a:hover {
+    background-color: #434343;
+  }
+
+  & .nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+  }
+
+  & .nav li:hover > ul {
+    display: block;
+  }
+
+  & .nav li ul li {
+    position: relative;
+  }
+
+  & .nav li ul li ul {
+    right: -140px;
+    top: 0px;
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 90vh;
+  padding: 2px;
+  height: calc(100vh - 7.4rem);
+
+  background-image: url("../../../assets/monkey-hero.jpg");
+  //background-position: -50rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    display: flex;
+    flex: 1;
+    margin: 1em;
+    max-width: 50%;
+    margin-right: 2rem;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgba(119, 119, 119, 0.575);
+    padding: 1rem;
+    border-radius: 3px;
+
+    &--title {
+      font-size: 5rem;
+    }
+
+    &--description {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.mkcuriosidades__container {
+  border-top: 4px solid black;
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  min-height: 45vw;
+  gap: 5rem;
+  background: linear-gradient(rgba(165, 71, 71, 0.5), rgba(128, 224, 109, 0.5)),
+    url("../../../assets/monkey-section.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  transition: 800ms;
+  &:hover {
+    opacity: 1;
+    border: 0px;
+  }
+}
+
+.mkcuriosidades {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+  column-gap: 5%;
+  justify-content: center;
+
+  &__subtitulo {
+    font-size: 3rem;
+    align-self: flex-start;
+  }
+
+  .curiosidad {
+    border: 0.3px dashed rgba(27, 75, 30, 0.233);
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+
+    &:hover {
+      transform: scale(1.01);
+      background-color: rgba(207, 81, 81, 0.083);
+    }
+
+    &__mensaje {
+      text-align: justify;
+      padding: 0 3rem;
+      font-size: 1rem;
+    }
+  }
+}
