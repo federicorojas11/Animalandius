@@ -1,109 +1,109 @@
 @use '../variables/variables' as *;
 
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: calc(100vh -7.4rem);
+// .hero {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   height: calc(100vh -7.4rem);
 
-  background-image: url("...");
-  background-position: right;
+//   background-image: url("...");
+//   background-position: right;
 
-  &__content {
-    display: flex;
-    max-width: 40%;
-    flex-direction: column;
-    margin-left: 10rem;
+//   &__content {
+//     display: flex;
+//     max-width: 40%;
+//     flex-direction: column;
+//     margin-left: 10rem;
 
-    &--title {
-      font-size: 7rem;
-    }
+//     &--title {
+//       font-size: 7rem;
+//     }
 
-    &--descripcion {
-      font-size: 2.2rem;
-    }
-  }
-}
+//     &--descripcion {
+//       font-size: 2.2rem;
+//     }
+//   }
+// }
 
-.testimoniales__container {
-  padding: 10rem;
-}
+// .testimoniales__container {
+//   padding: 10rem;
+// }
 
-.testimoniales {
-  display: flex;
-  flex-wrap: wrap;
+// .testimoniales {
+//   display: flex;
+//   flex-wrap: wrap;
 
-  .testimonios {
-    flex-wrap: wrap;
+//   .testimonios {
+//     flex-wrap: wrap;
 
-    /*&__titulo {
-    }
-    &__nombre {
-    }
-    &__mensaje {
-    } */
-  }
+//     /*&__titulo {
+//     }
+//     &__nombre {
+//     }
+//     &__mensaje {
+//     } */
+//   }
 
-  .info {
-    &__container {
-      background-color: $white;
-      color: white;
-    }
-  }
+//   .info {
+//     &__container {
+//       background-color: $white;
+//       color: white;
+//     }
+//   }
 
-  html {
-    font-size: 62.5%;
-  }
+//   html {
+//     font-size: 62.5%;
+//   }
 
-  body {
-    min-height: 100vh;
-    background-color: background-color;
-  }
+//   body {
+//     min-height: 100vh;
+//     background-color: background-color;
+//   }
 
-  h1 {
-    font-size: 3.2rem;
-  }
+//   h1 {
+//     font-size: 3.2rem;
+//   }
 
-  h2 {
-    font-size: 3rem;
-  }
+//   h2 {
+//     font-size: 3rem;
+//   }
 
-  h3 {
-    font-size: 2.5rem;
-  }
+//   h3 {
+//     font-size: 2.5rem;
+//   }
 
-  h4 {
-    font-size: 2.1rem;
-  }
+//   h4 {
+//     font-size: 2.1rem;
+//   }
 
-  h5 {
-    font-size: 1.7rem;
-  }
-  a {
-    color: white;
-  }
-}
+//   h5 {
+//     font-size: 1.7rem;
+//   }
+//   a {
+//     color: white;
+//   }
+// }
 
-.go-top {
-  position: fixed;
-  bottom: 10rem;
-  right: 5rem;
-  width: 7.5rem;
-  height: 7.5rem;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  background-color: $accent-color;
-  padding: 1rem;
-  border-radius: 50%;
+// .go-top {
+//   position: fixed;
+//   bottom: 10rem;
+//   right: 5rem;
+//   width: 7.5rem;
+//   height: 7.5rem;
+//   z-index: 999;
+//   display: flex;
+//   justify-content: center;
+//   background-color: $accent-color;
+//   padding: 1rem;
+//   border-radius: 50%;
 
-  p {
-    color: $white;
-    font-size: 2rem;
-    text-align: center;
-  }
-  &:hover {
-    background-color: $primary-color;
-  }
-}
+//   p {
+//     color: $white;
+//     font-size: 2rem;
+//     text-align: center;
+//   }
+//   &:hover {
+//     background-color: $primary-color;
+//   }
+// }
