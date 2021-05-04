@@ -44,57 +44,6 @@
   color: #003b36;
 }
 
-.animal__header__container {
-  margin: 0px;
-  padding: 0px;
-}
-.animal__header__container ul,
-.animal__header__container ol {
-  list-style: none;
-}
-.animal__header__container .nav > li {
-  float: left;
-}
-.animal__header__container ul.nav {
-  margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
-  position: absolute;
-  right: 2rem;
-  padding: 0.3rem;
-  border-radius: 10%;
-  background-color: rgba(0, 0, 0, 0.384);
-  transition: 550ms;
-}
-.animal__header__container ul.nav:hover {
-  background-color: rgba(18, 97, 24, 0.205);
-}
-.animal__header__container .nav li a {
-  transition: 400ms;
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 12px;
-  display: block;
-}
-.animal__header__container .nav li a:hover {
-  background-color: #434343;
-}
-.animal__header__container .nav li ul {
-  display: none;
-  position: absolute;
-  min-width: 140px;
-}
-.animal__header__container .nav li:hover > ul {
-  display: block;
-}
-.animal__header__container .nav li ul li {
-  position: relative;
-}
-.animal__header__container .nav li ul li ul {
-  right: -140px;
-  top: 0px;
-}
-
 .start__container {
   display: flex;
   align-items: center;
@@ -208,6 +157,7 @@ body.index-page {
   right: 2rem;
   padding: 0.3rem;
   border-radius: 10%;
+  top: 1rem;
   background-color: rgba(0, 0, 0, 0.384);
   transition: 550ms;
 }
@@ -239,6 +189,233 @@ body.index-page {
 .animal__header__container .nav li ul li ul {
   right: -140px;
   top: 0px;
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 90vh;
+  padding: 2px;
+  height: calc(100vh - 7.4rem);
+  background-image: url("../../../assets/monkey-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__content {
+  display: flex;
+  flex: 1;
+  margin: 1em;
+  max-width: 50%;
+  margin-right: 2rem;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  background-color: rgba(119, 119, 119, 0.575);
+  padding: 1rem;
+  border-radius: 3px;
+}
+.hero__content--title {
+  font-size: 5rem;
+}
+.hero__content--description {
+  font-size: 2.2rem;
+}
+
+.mkcuriosidades__container {
+  border-top: 4px solid black;
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  min-height: 45vw;
+  gap: 5rem;
+  background: linear-gradient(rgba(165, 71, 71, 0.5), rgba(128, 224, 109, 0.5)), url("../../../assets/monkey-section.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  transition: 800ms;
+}
+.mkcuriosidades__container:hover {
+  opacity: 1;
+  border: 0px;
+}
+
+.mkcuriosidades {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+  justify-content: center;
+}
+.mkcuriosidades__subtitulo {
+  font-size: 3rem;
+  align-self: flex-start;
+}
+.mkcuriosidades .curiosidad {
+  border: 0.3px dashed rgba(27, 75, 30, 0.233);
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+.mkcuriosidades .curiosidad:hover {
+  transform: scale(1.01);
+  background-color: rgba(207, 81, 81, 0.083);
+}
+.mkcuriosidades .curiosidad__mensaje {
+  text-align: justify;
+  padding: 0 3rem;
+  font-size: 1rem;
+}
+
+.animal__header__container {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ec6767;
+}
+.animal__header__container ul,
+.animal__header__container ol {
+  list-style: none;
+}
+.animal__header__container .nav > li {
+  float: left;
+}
+.animal__header__container ul.nav {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  right: 2rem;
+  padding: 0.3rem;
+  border-radius: 10%;
+  top: 1rem;
+  background-color: rgba(0, 0, 0, 0.384);
+  transition: 550ms;
+}
+.animal__header__container ul.nav:hover {
+  background-color: rgba(18, 97, 24, 0.205);
+}
+.animal__header__container .nav li a {
+  transition: 400ms;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+.animal__header__container .nav li a:hover {
+  background-color: #434343;
+}
+.animal__header__container .nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+.animal__header__container .nav li:hover > ul {
+  display: block;
+}
+.animal__header__container .nav li ul li {
+  position: relative;
+}
+.animal__header__container .nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 90vh;
+  padding: 2px;
+  height: calc(100vh - 7.4rem);
+  background-image: url("../../../assets/monkey-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__content {
+  display: flex;
+  flex: 1;
+  margin: 1em;
+  max-width: 50%;
+  margin-right: 2rem;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  background-color: rgba(119, 119, 119, 0.575);
+  padding: 1rem;
+  border-radius: 3px;
+}
+.hero__content--title {
+  font-size: 5rem;
+}
+.hero__content--description {
+  font-size: 2.2rem;
+}
+
+.mkcuriosidades__container {
+  border-top: 4px solid black;
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  min-height: 45vw;
+  gap: 5rem;
+  background: linear-gradient(rgba(165, 71, 71, 0.5), rgba(128, 224, 109, 0.5)), url("../../../assets/monkey-section.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  transition: 800ms;
+}
+.mkcuriosidades__container:hover {
+  opacity: 1;
+  border: 0px;
+}
+
+.mkcuriosidades {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+  justify-content: center;
+}
+.mkcuriosidades__subtitulo {
+  font-size: 3rem;
+  align-self: flex-start;
+}
+.mkcuriosidades .curiosidad {
+  border: 0.3px dashed rgba(27, 75, 30, 0.233);
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+.mkcuriosidades .curiosidad:hover {
+  transform: scale(1.01);
+  background-color: rgba(207, 81, 81, 0.083);
+}
+.mkcuriosidades .curiosidad__mensaje {
+  text-align: justify;
+  padding: 0 3rem;
+  font-size: 1rem;
 }
 
 body {
