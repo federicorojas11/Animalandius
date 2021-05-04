@@ -62,11 +62,11 @@
 
 .hero {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-end;
   min-height: 90vh;
-  padding: 2px;
   height: calc(100vh - 7.4rem);
+  padding: 2px;
 
   background-image: url("../../../assets/dog-hero.jpg");
   //background-position: -50rem 0;
@@ -78,11 +78,10 @@
     flex: 1;
     margin: 1em;
     max-width: 50%;
-    margin-right: 2rem;
     flex-direction: column;
     align-items: center;
     border: 1px solid black;
-    background-color: rgba(119, 119, 119, 0.575);
+    background-color: rgba(99, 185, 125, 0.199);
     padding: 1rem;
     border-radius: 3px;
 
@@ -96,62 +95,46 @@
   }
 }
 
-.mkcuriosidades__container {
+.articles__dog {
   border-top: 4px solid black;
-  color: white;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: center;
-  min-height: 45vw;
-  gap: 5rem;
-  background: linear-gradient(rgba(165, 71, 71, 0.5), rgba(128, 224, 109, 0.5)),
-    url("../../../assets/monkey-section.jpg");
-  background-repeat: no-repeat;
-  opacity: 0.85;
-  transition: 800ms;
-  &:hover {
-    opacity: 1;
-    border: 0px;
-  }
-}
+  background: linear-gradient(rgba(61, 10, 53, 0.521), rgba(160, 0, 0, 0.562));
 
-.mkcuriosidades {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 4rem;
-  column-gap: 5%;
-  justify-content: center;
-
-  &__subtitulo {
-    font-size: 3rem;
-    align-self: flex-start;
-  }
-
-  .curiosidad {
-    border: 0.3px dashed rgba(27, 75, 30, 0.233);
-    flex-basis: 70%;
+  &__container {
     display: flex;
     flex-direction: column;
-    align-content: center;
     align-items: center;
-    gap: 0.3rem;
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-    padding: 1rem;
-    border-radius: 1rem;
-    font-size: 1.5rem;
 
-    &:hover {
-      transform: scale(1.01);
-      background-color: rgba(207, 81, 81, 0.083);
+    &--title {
+      font-size: 2rem;
     }
 
-    &__mensaje {
-      text-align: justify;
-      padding: 0 3rem;
-      font-size: 1rem;
+    &__article {
+      display: flex;
+      flex-direction: row;
+
+      &--text {
+        font-size: 2rem;
+        margin-left: 5%;
+        margin-top: 4rem;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        line-height: 200%;
+        max-width: 60%;
+      }
+
+      & img {
+        max-width: 56%;
+        height: auto;
+        margin-left: 4rem;
+        border: 2px solid rgb(36, 36, 36);
+      }
+      & figcaption {
+        font-size: 20px;
+        margin-left: 5rem;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+        line-height: 100%;
+      }
     }
   }
 }
