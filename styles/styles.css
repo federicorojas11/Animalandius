@@ -338,7 +338,7 @@ body.index-page {
   min-height: 90vh;
   height: calc(100vh - 7.4rem);
   padding: 2px;
-  background-image: url("../../../assets/dog-hero.jpg");
+  background-image: url("../../../assets/elephant-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -361,60 +361,43 @@ body.index-page {
   font-size: 2.2rem;
 }
 
-.mkcuriosidades__container {
+.articles__dog {
   border-top: 4px solid black;
-  color: white;
-  padding: 3rem;
+  background: linear-gradient(rgba(61, 10, 53, 0.521), rgba(160, 0, 0, 0.562));
+}
+.articles__dog__container {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  text-align: center;
-  min-height: 45vw;
-  gap: 5rem;
-  background: linear-gradient(rgba(165, 71, 71, 0.5), rgba(128, 224, 109, 0.5)), url("../../../assets/monkey-section.jpg");
-  background-repeat: no-repeat;
-  opacity: 0.85;
-  transition: 800ms;
-}
-.mkcuriosidades__container:hover {
-  opacity: 1;
-  border: 0px;
-}
-
-.mkcuriosidades {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 4rem;
-  -moz-column-gap: 5%;
-       column-gap: 5%;
-  justify-content: center;
-}
-.mkcuriosidades__subtitulo {
-  font-size: 3rem;
-  align-self: flex-start;
-}
-.mkcuriosidades .curiosidad {
-  border: 0.3px dashed rgba(27, 75, 30, 0.233);
-  flex-basis: 70%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
   align-items: center;
-  gap: 0.3rem;
-  text-align: center;
-  transition: all 0.2s ease-in-out;
-  padding: 1rem;
-  border-radius: 1rem;
-  font-size: 1.5rem;
 }
-.mkcuriosidades .curiosidad:hover {
-  transform: scale(1.01);
-  background-color: rgba(207, 81, 81, 0.083);
+.articles__dog__container--title {
+  font-size: 2rem;
 }
-.mkcuriosidades .curiosidad__mensaje {
-  text-align: justify;
-  padding: 0 3rem;
-  font-size: 1rem;
+.articles__dog__container__article {
+  display: flex;
+  flex-direction: row;
+}
+.articles__dog__container__article--text {
+  font-size: 2rem;
+  margin-left: 5%;
+  margin-top: 4rem;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 200%;
+  max-width: 60%;
+}
+.articles__dog__container__article img {
+  max-width: 56%;
+  height: auto;
+  margin-left: 4rem;
+  border: 2px solid #242424;
+}
+.articles__dog__container__article figcaption {
+  font-size: 20px;
+  margin-left: 5rem;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: 100%;
 }
 
 body {

@@ -1,0 +1,105 @@
+.animal__header__container {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ec6767;
+}
+.animal__header__container ul,
+.animal__header__container ol {
+  list-style: none;
+}
+.animal__header__container .nav > li {
+  float: left;
+}
+.animal__header__container ul.nav {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  right: 2rem;
+  padding: 0.3rem;
+  border-radius: 10%;
+  top: 1rem;
+  background-color: rgba(0, 0, 0, 0.384);
+  transition: 550ms;
+}
+.animal__header__container ul.nav:hover {
+  background-color: rgba(18, 97, 24, 0.205);
+}
+.animal__header__container .nav li a {
+  transition: 400ms;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+.animal__header__container .nav li a:hover {
+  background-color: #434343;
+}
+.animal__header__container .nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+.animal__header__container .nav li:hover > ul {
+  display: block;
+}
+.animal__header__container .nav li ul li {
+  position: relative;
+}
+.animal__header__container .nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 90vh;
+  padding: 2px;
+  background-image: url("../../../assets/elephant-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style: initial;
+}
+.hero__content {
+  display: flex;
+  flex: 1;
+  margin: 1em;
+  max-width: 50%;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  background-color: rgba(99, 105, 185, 0.199);
+  padding: 1rem;
+  border-radius: 3px;
+}
+.hero__content--title {
+  font-size: 5rem;
+}
+.hero__content--description {
+  font-size: 2.2rem;
+}
+
+.atributos__elefante {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+.atributos__elefante__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+  max-width: 50%;
+}
+.atributos__elefante__container--title {
+  font-size: 1.8rem;
+  margin-left: 3rem;
+  text-decoration: underline;
+}
+.atributos__elefante__container--list {
+  list-style: initial;
+  font-size: 2.3rem;
+}
