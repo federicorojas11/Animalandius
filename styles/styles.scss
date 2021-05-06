@@ -1,8 +1,11 @@
 @use 'partials/main' as c;
 @use 'partials/variables/variables' as *;
+@use 'partials/startpage/home' as d;
 
 body {
   cursor: url(/assets/cur/NormalSelect.cur), pointer;
   display: flex;
   min-width: 100vh;
+  margin: 0px;
+  padding: 0px;
 }
