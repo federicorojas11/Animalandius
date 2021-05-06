@@ -1,8 +1,8 @@
 @use '../variables/variables' as *;
 
-body{
+body {
   transition: 200ms;
-  background: linear-gradient(rgb(175, 15, 15),rgb(238, 238, 238));
+  //background: linear-gradient(rgb(175, 15, 15),rgb(238, 238, 238));
 }
 
 .start__container {
@@ -14,20 +14,17 @@ body{
   position: inherit;
   display: block;
   //   max-height: 100vh;
-  & img:hover{
+  & img:hover {
     transition: 300ms;
-
 
     transform: scale(1.01);
   }
 
-  
   &--tiger {
     border: black solid 2px;
     margin-top: 1rem;
     justify-content: center;
     align-self: flex-end;
-    
   }
   &--title {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",

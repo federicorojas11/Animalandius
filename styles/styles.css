@@ -46,7 +46,6 @@
 
 body {
   transition: 200ms;
-  background: linear-gradient(#af0f0f, #eeeeee);
 }
 
 .start__container {
@@ -413,4 +412,4 @@ body {
   cursor: url(/assets/cur/NormalSelect.cur), pointer;
   display: flex;
   min-width: 100vh;
-}/*# sourceMappingURL=styles.css.map */
+}
