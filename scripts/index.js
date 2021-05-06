@@ -1,17 +1,16 @@
 $(document).ready(function () {
   var i = 0;
   colors = [
-    "wheat",
-    "background: linear-gradient(#eeeeee, rgb(18, 8, 19))",
-    "DarkSalmon",
-    "background: linear-gradient(rgb(18, 8, 19), #eeeeee)",
+    "rgba(138, 18, 119,0.5)",
+    "rgba(65, 0, 54, 0.596)",
+    "#500aacab",
+    "#0060afa4",
+    "#00b0cfa4",
   ];
-  $("body").css({
-    background:
-      "linear-gradient(rgba(165, 71, 71, 0.5), rgba(128, 224, 109, 0.5))",
-  });
+  $("body").css("background-color", "rgb(118, 58, 119,0.5)");
+  $("body").css("transition", "3000ms");
 
-  let backgroundColor = () => {
+  let backgroundColorChange = () => {
     switch (i) {
       case 0:
         $("body").css({
@@ -20,9 +19,7 @@ $(document).ready(function () {
         i++;
         break;
       case 1:
-        $("body").css({
-          background: colors[i],
-        });
+        $("body").css("background-color", colors[i]);
         i++;
         break;
       case 2:
@@ -32,11 +29,11 @@ $(document).ready(function () {
         i++;
         break;
       case 3:
-        $("body").css({
-          background: colors[i],
-        });
+        $("body").css("background-color", colors[i]);
         i = 0;
         break;
     }
   };
+
+  setInterval(backgroundColorChange, 2200);
 });

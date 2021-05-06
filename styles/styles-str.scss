@@ -1,6 +1,5 @@
 @use 'partials/main' as c;
 @use 'partials/variables/variables' as *;
-@import "compass";
 
 body {
   cursor: url(/assets/cur/NormalSelect.cur), pointer;

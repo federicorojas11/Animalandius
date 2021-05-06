@@ -45,48 +45,56 @@
 }
 
 body {
-  transition: 200ms;
+  max-width: 100vw !important;
 }
 
 .start__container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   min-width: 100%;
-  position: inherit;
-  display: block;
 }
 .start__container img:hover {
   transition: 300ms;
-  transform: scale(1.01);
+  transform: scale(1.005);
+}
+.start__container__enjoy {
+  text-shadow: rgba(207, 1, 80, 0.356) 2px 2px 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(68, 2, 51, 0.856);
+  position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  bottom: 2%;
+  left: 1%;
+  font-size: 1.7rem;
+}
+.start__container__enjoy--msj {
+  border-top: 1px dotted #291f1f;
+  margin-bottom: -3px;
+}
+.start__container__enjoy--gif {
+  margin-bottom: -1%;
 }
 .start__container--tiger {
   border: black solid 2px;
   margin-top: 1rem;
-  justify-content: center;
-  align-self: flex-end;
 }
 .start__container--title {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgba(92, 36, 182, 0.699);
+  text-shadow: #461b46 2px 4px 10px;
   position: absolute;
   top: 2%;
   margin-left: 10%;
   font-size: 2.5rem;
 }
-.start__container__description {
-  bottom: 2%;
-  position: absolute;
-  margin-left: 20rem;
-}
-.start__container__description--enjoy {
-  margin-left: 45rem;
-  position: absolute;
-  bottom: 2%;
-  font-size: 1.7rem;
-}
 .start__container--theButton {
   position: absolute;
+  transition: 200ms;
   top: 32%;
   left: 58%;
   text-shadow: black 2px 2px 5px;
@@ -100,6 +108,9 @@ body {
   border-radius: 5px;
   box-shadow: inset 0 0 50px #fae726;
   cursor: url(http://cur.cursors-4u.net/others/oth-6/oth630.cur), pointer;
+}
+.start__container--theButton:hover {
+  transform: scale(1.02);
 }
 
 body.index-page {
@@ -412,4 +423,4 @@ body {
   cursor: url(/assets/cur/NormalSelect.cur), pointer;
   display: flex;
   min-width: 100vh;
-}
+}/*# sourceMappingURL=styles-str.css.map */

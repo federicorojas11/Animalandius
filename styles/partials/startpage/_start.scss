@@ -1,54 +1,63 @@
 @use '../variables/variables' as *;
 
 body {
-  transition: 200ms;
-  //background: linear-gradient(rgb(175, 15, 15),rgb(238, 238, 238));
+  // transition: 200ms;
+  max-width: 100vw !important;
 }
 
 .start__container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   min-width: 100%;
-  position: inherit;
-  display: block;
-  //   max-height: 100vh;
   & img:hover {
     transition: 300ms;
+    transform: scale(1.005);
+  }
 
-    transform: scale(1.01);
+  &__enjoy {
+    text-shadow: rgba(207, 1, 80, 0.356) 2px 2px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(68, 2, 51, 0.856);
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    bottom: 2%;
+    left: 1%;
+    font-size: 1.7rem;
+    &--msj {
+      border-top: 1px dotted rgb(41, 31, 31);
+      margin-bottom: -3px;
+    }
+    &--gif {
+      margin-bottom: -1%;
+    }
   }
 
   &--tiger {
     border: black solid 2px;
     margin-top: 1rem;
-    justify-content: center;
-    align-self: flex-end;
+    //justify-content: center;
+    //align-self: flex-end;
   }
+
   &--title {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: rgba(92, 36, 182, 0.699);
+    text-shadow: rgb(70, 27, 70) 2px 4px 10px;
     position: absolute;
     top: 2%;
     margin-left: 10%;
     font-size: 2.5rem;
   }
 
-  &__description {
-    bottom: 2%;
-    position: absolute;
-    margin-left: 20rem;
-    &--enjoy {
-      margin-left: 45rem;
-      position: absolute;
-      bottom: 2%;
-      font-size: 1.7rem;
-    }
-  }
-
   &--theButton {
     position: absolute;
+    transition: 200ms;
     top: 32%;
     left: 58%;
     text-shadow: black 2px 2px 5px;
@@ -62,5 +71,8 @@ body {
     border-radius: 5px;
     box-shadow: inset 0 0 50px #fae726;
     cursor: url(http://cur.cursors-4u.net/others/oth-6/oth630.cur), pointer;
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 }
