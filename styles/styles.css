@@ -44,6 +44,11 @@
   color: #003b36;
 }
 
+body {
+  transition: 200ms;
+  background: linear-gradient(#af0f0f, #eeeeee);
+}
+
 .start__container {
   display: flex;
   align-items: center;
@@ -52,6 +57,10 @@
   min-width: 100%;
   position: inherit;
   display: block;
+}
+.start__container img:hover {
+  transition: 300ms;
+  transform: scale(1.01);
 }
 .start__container--tiger {
   border: black solid 2px;
@@ -338,7 +347,7 @@ body.index-page {
   min-height: 90vh;
   height: calc(100vh - 7.4rem);
   padding: 2px;
-  background-image: url("../../../assets/elephant-hero.jpg");
+  background-image: url("../../../assets/dog-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -404,4 +413,4 @@ body {
   cursor: url(/assets/cur/NormalSelect.cur), pointer;
   display: flex;
   min-width: 100vh;
-}
+}/*# sourceMappingURL=styles.css.map */
