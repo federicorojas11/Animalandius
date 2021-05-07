@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animalandius - Mono</title>
+    <link rel="stylesheet" href="/styles/animalgeneralstyles.css">
     <link rel="stylesheet" href="styles/partials/animals/monopage.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
     <style>
         body {
             min-height: 200vh;
@@ -25,13 +28,13 @@
                 <li><a href="">Seleccionar otro Animal</a>
                     <ul>
                         <li><a href="perro.html">Perro</a></li>
-                        <li><a href="">Elefante</a></li>
+                        <li><a href="elefante.html">Elefante</a></li>
 
                     </ul>
 
             </ul>
         </div>
-        </div>
+
     </header>
     <!--  fin header  -->
 
@@ -47,66 +50,77 @@
                 </p>
             </div>
         </hero>
+
+        <!--  *Curiosidades ------ -->
+        <section class="mkcuriosidades__container" id="mkcuriosidades">
+            <h2 class="mkcuriosidades__subtitulo accent">Curiosidades de los primates...</h2>
+            <div class="mkcuriosidades container effect1">
+
+                <!--  Curiosidad N.1 ------ -->
+                <!-- text -->
+                <div class="curiosidad" id="curiosidad1">
+                    <div class="curiosidad__titulo">
+                        <h3>Son muy viejos!</h3>
+                    </div>
+                    <div class="curiosidad__mensaje">
+                        <p>
+                            Actualmente se estima que existen 260 especies de monos, pero los primeros aparecieron en
+                            África
+                            hace unos 40 millones
+                            de años.
+                        </p>
+                    </div>
+                    <!-- img -->
+                    <div class="curiosidad__mensaje--img" style="display:none" id="img-curiosidad1">
+                        <img src="/assets/monkey-d1.jpg">
+                    </div>
+                </div>
+
+                <!-- Curiosidad N.2 ------ -->
+                <!-- text -->
+                <div class=" curiosidad" id="curiosidad2">
+                    <div class="curiosidad__titulo">
+                        <h3>Son afectivos</h3>
+                    </div>
+                    <div class="curiosidad__mensaje">
+                        <p>
+                            son muy cariñosos entre sus manadas (se dan besos, abrazos y palmadas), suelen sonreír, se
+                            comunican por signos y tienen
+                            pulgares oponibles (esto le permite sujetar cosas con los pies)
+                        </p>
+                    </div>
+                    <!-- img -->
+                    <div class="curiosidad__mensaje--img" style="display:none" id="img-curiosidad2">
+                        <img src="/assets/2monk.jpg">
+                    </div>
+                </div>
+
+                <!-- Curiosidad N.3 ------ -->
+                <!-- text -->
+                <div class="curiosidad" id="curiosidad3">
+                    <!-- img -->
+                    <div class="curiosidad__mensaje--img" style="display:none" id="img-curiosidad3">
+                        <img src="/assets/3monk.jpg">
+                    </div>
+                    <div class="curiosidad__titulo">
+                        <h3>Son tan parecidos a nosotros...</h3>
+                    </div>
+                    <div class="curiosidad__mensaje">
+                        <p>
+                            Un reciente estudio ha demostrado que los primates comparten entre el 94 y 95 por ciento el
+                            genoma humano.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>TP1 web development 2021</p>
+        </footer>
+
+
     </main>
-
-
-    <section class="mkcuriosidades__container">
-        <h2 class="mkcuriosidades__subtitulo accent">Curiosidades de los primates...</h2>
-        <div id="mkcuriosidades" class="mkcuriosidades container effect1">
-
-            <div class="curiosidad" id="curiosidad1">
-                <div class="curiosidad__titulo">
-                    <h3>Son muy viejos!</h3>
-                </div>
-
-                <div class="curiosidad__mensaje">
-                    <p>
-                        Actualmente se estima que existen 260 especies de monos, pero los primeros aparecieron en África
-                        hace unos 40 millones
-                        de años.
-
-                    </p>
-                    <div class="curiosidad__mensaje--img">
-                        <img src="/assets/monkey-d1.jpg" style="display:none" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="curiosidad" id="curiosidad2">
-                <div class="curiosidad__titulo">
-                    <h3>Son afectivos</h3>
-                </div>
-
-                <div class="curiosidad__mensaje">
-                    <p>
-                        son muy cariñosos entre sus manadas (se dan besos, abrazos y palmadas), suelen sonreír, se
-                        comunican por signos y tienen
-                        pulgares oponibles (esto le permite sujetar cosas con los pies)
-                        <div class="curiosidad__mensaje--img">
-                            <img src="/assets/monkey-d1.jpg" style="display:none" alt="">
-                        </div>
-                    </p>
-                </div>
-            </div>
-
-            <div class="curiosidad" id="curiosidad3">
-                <div class="curiosidad__titulo">
-                    <h3>Son tan parecidos a nosotros...</h3>
-                </div>
-                <div class="curiosidad__mensaje">
-                    <p>
-                        Un reciente estudio ha demostrado que los primates comparten entre el 94 y 95 por ciento el
-                        genoma humano.
-
-                    </p>
-                    <div class="curiosidad__mensaje--img">
-                        <img src="/assets/monkey-d1.jpg" style="display:none" alt="">
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-<script src="/scripts/index copy.js"></script>
+    <!-- fin main -->
+    <script src="/scripts/animals.js"></script>
 </body>
