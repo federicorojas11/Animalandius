@@ -2,7 +2,7 @@
 @use 'partials/variables/variables' as *;
 
 body {
-  cursor: url(/assets/cur/NormalSelect.cur), pointer;
+  cursor: url(../assets/cur/NormalSelect.cur), pointer;
   display: flex;
   min-width: 100vh;
 }

@@ -70,7 +70,7 @@ footer {
 
 body.index-page {
   display: flex;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(59, 1, 56, 0.658)), url("/assets/img/begin-background.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(59, 1, 56, 0.658)), url("../../../assets/img/begin-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -191,7 +191,7 @@ body.index-page {
 }
 
 body {
-  cursor: url(/assets/cur/NormalSelect.cur), pointer;
+  cursor: url(../assets/cur/NormalSelect.cur), pointer;
   display: flex;
   min-width: 100vh;
 }
