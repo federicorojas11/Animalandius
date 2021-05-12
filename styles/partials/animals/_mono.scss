@@ -1,15 +1,14 @@
 @use '../variables/variables' as *;
 
-.hero {
+.heromonkey {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  min-height: 90vh;
+  min-height: 99vh;
   padding: 2px;
   height: calc(100vh - 7.4rem);
 
-  background-image: url("../../../assets/monkey-hero.jpg");
-  //background-position: -50rem 0;
+  background-image: url("../../../assets/img/monkey-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -47,7 +46,7 @@
   min-height: 45vw;
   gap: 5rem;
   background: linear-gradient(rgba(165, 71, 71, 0.5), rgba(128, 224, 109, 0.5)),
-    url("../../../assets/monkey-section.jpg");
+    url("../../../assets/img/monkey-section.jpg");
   background-repeat: no-repeat;
   opacity: 0.85;
   transition: 800ms;
@@ -84,7 +83,7 @@
 
     &:hover {
       transform: scale(1.01);
-      background-color: rgba(207, 81, 81, 0.083);
+      background-color: rgba(204, 58, 58, 0.329);
       cursor: url(http://cur.cursors-4u.net/others/oth-6/oth630.cur), pointer;
     }
 

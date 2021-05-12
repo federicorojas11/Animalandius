@@ -1,0 +1,59 @@
+@use '../variables/variables' as *;
+
+.heroelep {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 99vh;
+  padding: 2px;
+
+  background-image: url("../../../assets/img/elephant-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style: initial;
+
+  &__content {
+    display: flex;
+    flex: 1;
+    margin: 1em;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgba(99, 105, 185, 0.199);
+    padding: 1rem;
+    border-radius: 3px;
+
+    &--title {
+      font-size: 5rem;
+    }
+
+    &--description {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.atributos__elefante {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    max-width: 50%;
+
+    &--title {
+      font-size: 1.8rem;
+      margin-left: 3rem;
+      text-decoration: underline;
+    }
+    &--list {
+      list-style: initial;
+      font-size: 2.3rem;
+    }
+  }
+}

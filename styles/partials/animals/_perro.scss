@@ -1,15 +1,13 @@
 @use '../variables/variables' as *;
 
-.hero {
+.herodog {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  min-height: 90vh;
-  height: calc(100vh - 7.4rem);
+  min-height: 96vh;
   padding: 2rem;
 
-  background-image: url("../../../assets/dog-hero.jpg");
-  //background-position: -50rem 0;
+  background-image: url("../../../assets/img/dog-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -38,6 +36,7 @@
 .articles__dog {
   border-top: 4px solid black;
   background: linear-gradient(rgba(61, 10, 53, 0.521), rgba(160, 0, 0, 0.562));
+  min-height: 90vh;
 
   &__container {
     display: flex;
@@ -77,4 +76,57 @@
       }
     }
   }
+}
+
+.quiz {
+  border-top: 5px solid rgb(109, 19, 19);
+  display: flex;
+  min-height: 99vh;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgb(63, 3, 3), rgb(88, 3, 77));
+  color: wheat;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    &--title {
+      font-size: 2.5rem;
+      align-self: start;
+    }
+    &--subtitle {
+      align-self: start;
+      text-indent: 3rem;
+      background-color: rgb(247, 165, 165);
+      color: black;
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+
+    &--botonPerros {
+      font-size: 2rem;
+      margin-left: 10rem;
+    }
+  }
+
+  &__resultado {
+    border: solid rgba(0, 0, 0, 0.384) 1px;
+    background-color: rgb(167, 86, 86);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    margin-left: -6rem;
+    font-size: 3rem;
+    display: none;
+  }
+}
+
+.show {
+  display: block;
 }

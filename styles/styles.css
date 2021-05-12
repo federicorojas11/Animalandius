@@ -1,57 +1,76 @@
-.footer__container {
-  background-color: #59114d;
-  position: fixed;
-}
-
-.footer {
+footer {
+  color: white;
+  background-color: black;
+  font-size: 20px;
   display: flex;
   align-items: center;
-  padding: 2rem 0;
-  justify-content: space-between;
-  gap: 10rem;
-}
-.footer__info--title {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.footer__info--text {
-  text-align: center;
-}
-.footer__info__info {
-  width: 70%;
-}
-.footer__info__links {
-  flex-basis: 30%;
-  display: flex;
-  justify-content: space-between;
-  gap: 5%;
+  justify-content: center;
 }
 
 .header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 0;
-  background-color: rgba(97, 97, 97, 0.521);
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 .header__logo {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgba(9, 0, 63, 0.507);
+  color: rgba(85, 55, 255, 0.507);
   text-shadow: rgba(163, 59, 163, 0.397) 2px 4px 10px;
   position: absolute;
-  top: 3%;
+  top: -2%;
   margin-left: 5%;
   font-size: 2.5rem;
 }
-.header__nav--link:hover {
-  color: #babebe;
+
+.animal__header__container {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.animal__header__container ul,
+.animal__header__container ol {
+  list-style: none;
+}
+.animal__header__container .nav > li {
+  float: left;
+}
+.animal__header__container ul.nav {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  right: 5rem;
+  border-radius: 10%;
+  top: 0.4rem;
+  transition: 550ms;
+}
+.animal__header__container .nav li a {
+  transition: 400ms;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+.animal__header__container .nav li a:hover {
+  background-color: #434343;
+}
+.animal__header__container .nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+.animal__header__container .nav li:hover > ul {
+  display: block;
+}
+.animal__header__container .nav li ul li {
+  position: relative;
+}
+.animal__header__container .nav li ul li ul {
+  right: -140px;
+  top: 0px;
 }
 
 body.index-page {
   display: flex;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(59, 1, 56, 0.658)), url("/assets/begin-background.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(59, 1, 56, 0.658)), url("/assets/img/begin-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -93,6 +112,7 @@ body.index-page {
   background-color: rgba(200, 200, 200, 0.1);
 }
 .menu__nav--link {
+  cursor: url(http://cur.cursors-4u.net/others/oth-6/oth630.cur), pointer !important;
   text-decoration: none;
   transition: 500ms;
   color: rgba(186, 190, 190, 0.5);
@@ -170,272 +190,10 @@ body.index-page {
   transform: scale(1.02);
 }
 
-.animal__header__container {
-  margin: 0px;
-  padding: 0px;
-  background-color: #ec6767;
-}
-.animal__header__container ul,
-.animal__header__container ol {
-  list-style: none;
-}
-.animal__header__container .nav > li {
-  float: left;
-}
-.animal__header__container ul.nav {
-  margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
-  position: absolute;
-  right: 2rem;
-  padding: 0.3rem;
-  border-radius: 10%;
-  top: 1rem;
-  background-color: rgba(0, 0, 0, 0.384);
-  transition: 550ms;
-}
-.animal__header__container ul.nav:hover {
-  background-color: rgba(18, 97, 24, 0.205);
-}
-.animal__header__container .nav li a {
-  transition: 400ms;
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 12px;
-  display: block;
-}
-.animal__header__container .nav li a:hover {
-  background-color: #434343;
-}
-.animal__header__container .nav li ul {
-  display: none;
-  position: absolute;
-  min-width: 140px;
-}
-.animal__header__container .nav li:hover > ul {
-  display: block;
-}
-.animal__header__container .nav li ul li {
-  position: relative;
-}
-.animal__header__container .nav li ul li ul {
-  right: -140px;
-  top: 0px;
-}
-
-.hero {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  min-height: 90vh;
-  padding: 2px;
-  height: calc(100vh - 7.4rem);
-  background-image: url("../../../assets/monkey-hero.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.hero__content {
-  display: flex;
-  flex: 1;
-  margin: 1em;
-  max-width: 50%;
-  margin-right: 2rem;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
-  background-color: rgba(119, 119, 119, 0.575);
-  padding: 1rem;
-  border-radius: 3px;
-}
-.hero__content--title {
-  font-size: 5rem;
-}
-.hero__content--description {
-  font-size: 2.2rem;
-}
-
-.mkcuriosidades__container {
-  border-top: 4px solid black;
-  color: white;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: center;
-  min-height: 45vw;
-  gap: 5rem;
-  background: linear-gradient(rgba(165, 71, 71, 0.5), rgba(128, 224, 109, 0.5)), url("../../../assets/monkey-section.jpg");
-  background-repeat: no-repeat;
-  opacity: 0.85;
-  transition: 800ms;
-}
-.mkcuriosidades__container:hover {
-  opacity: 1;
-  border: 0px;
-}
-
-.mkcuriosidades {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 4rem;
-  -moz-column-gap: 5%;
-       column-gap: 5%;
-  justify-content: center;
-}
-.mkcuriosidades__subtitulo {
-  font-size: 3rem;
-  align-self: flex-start;
-}
-.mkcuriosidades .curiosidad {
-  border: 0.3px dashed rgba(27, 75, 30, 0.233);
-  flex-basis: 70%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  gap: 0.3rem;
-  text-align: center;
-  transition: all 0.2s ease-in-out;
-  padding: 1rem;
-  border-radius: 1rem;
-  font-size: 1.5rem;
-}
-.mkcuriosidades .curiosidad:hover {
-  transform: scale(1.01);
-  background-color: rgba(207, 81, 81, 0.083);
-}
-.mkcuriosidades .curiosidad__mensaje {
-  text-align: justify;
-  padding: 0 3rem;
-  font-size: 1rem;
-}
-
-.animal__header__container {
-  margin: 0px;
-  padding: 0px;
-  background-color: #ec6767;
-}
-.animal__header__container ul,
-.animal__header__container ol {
-  list-style: none;
-}
-.animal__header__container .nav > li {
-  float: left;
-}
-.animal__header__container ul.nav {
-  margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
-  position: absolute;
-  right: 2rem;
-  padding: 0.3rem;
-  border-radius: 10%;
-  top: 1rem;
-  background-color: rgba(0, 0, 0, 0.384);
-  transition: 550ms;
-}
-.animal__header__container ul.nav:hover {
-  background-color: rgba(18, 97, 24, 0.205);
-}
-.animal__header__container .nav li a {
-  transition: 400ms;
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 12px;
-  display: block;
-}
-.animal__header__container .nav li a:hover {
-  background-color: #434343;
-}
-.animal__header__container .nav li ul {
-  display: none;
-  position: absolute;
-  min-width: 140px;
-}
-.animal__header__container .nav li:hover > ul {
-  display: block;
-}
-.animal__header__container .nav li ul li {
-  position: relative;
-}
-.animal__header__container .nav li ul li ul {
-  right: -140px;
-  top: 0px;
-}
-
-.hero {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  min-height: 90vh;
-  height: calc(100vh - 7.4rem);
-  padding: 2px;
-  background-image: url("../../../assets/dog-hero.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.hero__content {
-  display: flex;
-  flex: 1;
-  margin: 1em;
-  max-width: 50%;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
-  background-color: rgba(99, 185, 125, 0.199);
-  padding: 1rem;
-  border-radius: 3px;
-}
-.hero__content--title {
-  font-size: 5rem;
-}
-.hero__content--description {
-  font-size: 2.2rem;
-}
-
-.articles__dog {
-  border-top: 4px solid black;
-  background: linear-gradient(rgba(61, 10, 53, 0.521), rgba(160, 0, 0, 0.562));
-}
-.articles__dog__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.articles__dog__container--title {
-  font-size: 2rem;
-}
-.articles__dog__container__article {
-  display: flex;
-  flex-direction: row;
-}
-.articles__dog__container__article--text {
-  font-size: 2rem;
-  margin-left: 5%;
-  margin-top: 4rem;
-  letter-spacing: 2px;
-  word-spacing: 5px;
-  line-height: 200%;
-  max-width: 60%;
-}
-.articles__dog__container__article img {
-  max-width: 56%;
-  height: auto;
-  margin-left: 4rem;
-  border: 2px solid #242424;
-}
-.articles__dog__container__article figcaption {
-  font-size: 20px;
-  margin-left: 5rem;
-  letter-spacing: 0px;
-  word-spacing: 0px;
-  line-height: 100%;
-}
-
 body {
   cursor: url(/assets/cur/NormalSelect.cur), pointer;
   display: flex;
   min-width: 100vh;
   margin: 0px;
   padding: 0px;
-}/*# sourceMappingURL=styles.css.map */
+}

@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animalandius - Mono</title>
-    <link rel="stylesheet" href="/styles/animalgeneralstyles.css">
-    <link rel="stylesheet" href="/styles/partials/animals/perropage.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/styles-animal.css">
 
 </head>
 
@@ -35,10 +33,10 @@
 
         <!-- main -->
         <main>
-            <hero class="hero">
-                <div class="hero__content">
-                    <h1 class="hero__content--title accent">Animal-> Perro</h1>
-                    <p class="hero__content--description">
+            <hero class="herodog">
+                <div class="herodog__content">
+                    <h1 class="herodog__content--title accent">Animal-> Perro</h1>
+                    <p class="herodog__content--description">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore laudantium, harum amet omnis
                         enim
                         neque? Quibusdam esse eum error. Dolorem perspiciatis repellat blanditiis deserunt nemo omnis
@@ -61,13 +59,47 @@
                         voluptatibus corrupti. Unde vero sint laborum nulla, quas impedit facilis id deleniti labore
                         mollitia?</p>
                     <figure>
-                        <img src="/assets/dog-article.jpg" alt="foto de un perro">
+                        <img src="assets/img/dog-article.jpg" alt="foto de un perro">
                         <figcaption>Floki jugando con una mariposa</figcaption>
                     </figure>
                 </div>
             </div>
         </section>
 
+        <section class="quiz">
+            <div class="quiz__container">
+                <h2 class="quiz__container--title">Pequeña Trivia!</h2>
+                <p class="quiz__container--subtitle">¿¿Cuanto sabes de perros??</p>
+
+                <form name="quizForm" onsubmit="return mostrarResultado()" id="quiz">
+                    <h3>¿Cuantos perros hay en el mundo?</h3>
+                    <input type="radio" name="p1" value="a"> a.220 millones <br>
+                    <input type="radio" name="p1" value="b"> b.450 millones <br>
+                    <input type="radio" name="p1" value="c"> c.700 millones <br>
+                    <input type="radio" name="p1" value="d"> d.720 millones <br>
+
+                    <h3>Los perros domésticos surgieron...</h3>
+                    <input type="radio" name="p2" value="a"> a.hace 5.000 años <br>
+                    <input type="radio" name="p2" value="b"> b.hace 9.000 años <br>
+                    <input type="radio" name="p2" value="c"> c.hace 16.000 años <br>
+
+                    <h3>Verdadero o falso: los perros ven solo en blanco y negro </h3>
+                    <input type="radio" name="p3" value="a"> a.verdadero <br>
+                    <input type="radio" name="p3" value="b"> b.falso <br>
+
+                    <h3>¿Cuántos dientes tienen los perros? </h3>
+                    <input type="radio" name="p4" value="a"> a.36 <br>
+                    <input type="radio" name="p4" value="b"> b.42 <br>
+                    <input type="radio" name="p4" value="c"> c.46 <br>
+
+
+                    <button class="quiz__container--botonPerros" id="submit" value="Enviar">Ver resultado</button>
+                </form>
+            </div>
+            <div class="quiz__resultado" id="resultado">
+
+            </div>
+        </section>
 
         <footer>
             <p>TP1 web development 2021</p>
@@ -77,6 +109,7 @@
         <!-- fin main -->
     </main>
 
+    <script src="scripts/dog.js"></script>
 </body>
 
 </html>

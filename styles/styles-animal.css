@@ -1,0 +1,461 @@
+footer {
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+}
+.header__logo {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgba(85, 55, 255, 0.507);
+  text-shadow: rgba(163, 59, 163, 0.397) 2px 4px 10px;
+  position: absolute;
+  top: -2%;
+  margin-left: 5%;
+  font-size: 2.5rem;
+}
+
+.animal__header__container {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.animal__header__container ul,
+.animal__header__container ol {
+  list-style: none;
+}
+.animal__header__container .nav > li {
+  float: left;
+}
+.animal__header__container ul.nav {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  right: 5rem;
+  border-radius: 10%;
+  top: 0.4rem;
+  transition: 550ms;
+}
+.animal__header__container .nav li a {
+  transition: 400ms;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+.animal__header__container .nav li a:hover {
+  background-color: #434343;
+}
+.animal__header__container .nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+.animal__header__container .nav li:hover > ul {
+  display: block;
+}
+.animal__header__container .nav li ul li {
+  position: relative;
+}
+.animal__header__container .nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+
+body.index-page {
+  display: flex;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(59, 1, 56, 0.658)), url("/assets/img/begin-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header {
+  border-bottom: solid 1px rgba(80, 76, 76, 0.237);
+  line-height: 2px;
+  position: absolute;
+  width: 100vw;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+}
+.menu--info {
+  color: white;
+  font-size: 2rem;
+}
+
+.menu__nav {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 4.7rem;
+  row-gap: 1.5rem;
+  text-align: center;
+  border: 1px rgba(83, 83, 83, 0.28) solid;
+  padding: 1rem;
+  transition: 200ms;
+  letter-spacing: 0.5rem;
+}
+.menu__nav:hover {
+  background-color: rgba(200, 200, 200, 0.1);
+}
+.menu__nav--link {
+  cursor: url(http://cur.cursors-4u.net/others/oth-6/oth630.cur), pointer !important;
+  text-decoration: none;
+  transition: 500ms;
+  color: rgba(186, 190, 190, 0.5);
+  border-bottom: 1px grey solid;
+  background-color: rgba(95, 6, 91, 0.096);
+}
+.menu__nav--link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(2, 211, 190, 0.5);
+  border-bottom: 1px #e0b1da solid;
+}
+
+.start__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+}
+.start__container img:hover {
+  transition: 300ms;
+  transform: scale(1.005);
+}
+.start__container__enjoy {
+  text-shadow: rgba(207, 1, 80, 0.356) 2px 2px 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(68, 2, 51, 0.856);
+  position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  bottom: 2%;
+  left: 1%;
+  font-size: 1.7rem;
+}
+.start__container__enjoy--msj {
+  border-top: 1px dotted #291f1f;
+  margin-bottom: -3px;
+}
+.start__container__enjoy--gif {
+  margin-bottom: -1%;
+}
+.start__container--tiger {
+  border: black solid 2px;
+  margin-top: 1rem;
+}
+.start__container--title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgba(92, 36, 182, 0.699);
+  text-shadow: #523252 2px 4px 10px;
+  position: absolute;
+  top: 2%;
+  margin-left: 10%;
+  font-size: 2.5rem;
+}
+.start__container--theButton {
+  position: absolute;
+  transition: 200ms;
+  top: 32%;
+  left: 58%;
+  text-shadow: black 2px 2px 5px;
+  font-style: italic;
+  font-family: "Times New Roman";
+  font-size: 36px;
+  color: #05528e;
+  margin: 3px;
+  border: #bf1c09 solid 2px;
+  padding: 15px 18px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 50px #fae726;
+  cursor: url(http://cur.cursors-4u.net/others/oth-6/oth630.cur), pointer;
+}
+.start__container--theButton:hover {
+  transform: scale(1.02);
+}
+
+.heroelep {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 99vh;
+  padding: 2px;
+  background-image: url("../../../assets/img/elephant-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style: initial;
+}
+.heroelep__content {
+  display: flex;
+  flex: 1;
+  margin: 1em;
+  max-width: 50%;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  background-color: rgba(99, 105, 185, 0.199);
+  padding: 1rem;
+  border-radius: 3px;
+}
+.heroelep__content--title {
+  font-size: 5rem;
+}
+.heroelep__content--description {
+  font-size: 2.2rem;
+}
+
+.atributos__elefante {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+.atributos__elefante__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+  max-width: 50%;
+}
+.atributos__elefante__container--title {
+  font-size: 1.8rem;
+  margin-left: 3rem;
+  text-decoration: underline;
+}
+.atributos__elefante__container--list {
+  list-style: initial;
+  font-size: 2.3rem;
+}
+
+.heromonkey {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 99vh;
+  padding: 2px;
+  height: calc(100vh - 7.4rem);
+  background-image: url("../../../assets/img/monkey-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heromonkey__content {
+  display: flex;
+  flex: 1;
+  margin: 1em;
+  max-width: 50%;
+  margin-right: 2rem;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  background-color: rgba(119, 119, 119, 0.575);
+  padding: 1rem;
+  border-radius: 3px;
+}
+.heromonkey__content--title {
+  font-size: 5rem;
+}
+.heromonkey__content--description {
+  font-size: 2.2rem;
+}
+
+.mkcuriosidades__container {
+  border-top: 4px solid black;
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  min-height: 45vw;
+  gap: 5rem;
+  background: linear-gradient(rgba(165, 71, 71, 0.5), rgba(128, 224, 109, 0.5)), url("../../../assets/img/monkey-section.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  transition: 800ms;
+}
+.mkcuriosidades__container:hover {
+  opacity: 1;
+  border: 0px;
+}
+
+.mkcuriosidades {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1.4rem;
+  justify-content: center;
+}
+.mkcuriosidades__subtitulo {
+  font-size: 3rem;
+  align-self: flex-start;
+}
+.mkcuriosidades .curiosidad {
+  border: 0.3px dashed rgba(27, 75, 30, 0.233);
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+.mkcuriosidades .curiosidad:hover {
+  transform: scale(1.01);
+  background-color: rgba(204, 58, 58, 0.329);
+  cursor: url(http://cur.cursors-4u.net/others/oth-6/oth630.cur), pointer;
+}
+.mkcuriosidades .curiosidad__mensaje {
+  text-align: justify;
+  padding: 0 3rem;
+  font-size: 1rem;
+}
+.mkcuriosidades .curiosidad__mensaje--img img {
+  height: 100%;
+  max-height: 300px;
+}
+
+.herodog {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  min-height: 96vh;
+  padding: 2rem;
+  background-image: url("../../../assets/img/dog-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.herodog__content {
+  display: flex;
+  flex: 1;
+  margin: 1em;
+  max-width: 50%;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  background-color: rgba(99, 185, 125, 0.199);
+  padding: 1rem;
+  border-radius: 3px;
+}
+.herodog__content--title {
+  font-size: 5rem;
+}
+.herodog__content--description {
+  font-size: 2.2rem;
+}
+
+.articles__dog {
+  border-top: 4px solid black;
+  background: linear-gradient(rgba(61, 10, 53, 0.521), rgba(160, 0, 0, 0.562));
+  min-height: 90vh;
+}
+.articles__dog__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articles__dog__container--title {
+  font-size: 2rem;
+}
+.articles__dog__container__article {
+  display: flex;
+  flex-direction: row;
+}
+.articles__dog__container__article--text {
+  font-size: 2rem;
+  margin-left: 5%;
+  margin-top: 4rem;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 200%;
+  max-width: 60%;
+}
+.articles__dog__container__article img {
+  max-width: 56%;
+  height: auto;
+  margin-left: 4rem;
+  border: 2px solid #242424;
+}
+.articles__dog__container__article figcaption {
+  font-size: 20px;
+  margin-left: 5rem;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: 100%;
+}
+
+.quiz {
+  border-top: 5px solid #6d1313;
+  display: flex;
+  min-height: 99vh;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(#3f0303, #58034d);
+  color: wheat;
+}
+.quiz__container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 80%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+}
+.quiz__container--title {
+  font-size: 2.5rem;
+  align-self: start;
+}
+.quiz__container--subtitle {
+  align-self: start;
+  text-indent: 3rem;
+  background-color: #f7a5a5;
+  color: black;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.quiz__container--botonPerros {
+  font-size: 2rem;
+  margin-left: 10rem;
+}
+.quiz__resultado {
+  border: solid rgba(0, 0, 0, 0.384) 1px;
+  background-color: #a75656;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  margin-left: -6rem;
+  font-size: 3rem;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+body {
+  cursor: url(/assets/cur/NormalSelect.cur), pointer;
+  display: flex;
+  min-width: 100vh;
+  margin: 0px;
+  padding: 0px;
+}

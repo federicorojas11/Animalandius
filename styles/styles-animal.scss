@@ -1,0 +1,13 @@
+@use 'partials/main' as c;
+@use 'partials/variables/variables' as *;
+@use 'partials/animals/elefante' as d;
+@use 'partials/animals/mono' as e;
+@use 'partials/animals/perro' as f;
+
+body {
+  cursor: url(/assets/cur/NormalSelect.cur), pointer;
+  display: flex;
+  min-width: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
