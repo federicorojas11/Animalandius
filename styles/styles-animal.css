@@ -70,7 +70,7 @@ footer {
 
 body.index-page {
   display: flex;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(59, 1, 56, 0.658)), url("../../../assets/img/begin-background.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(59, 1, 56, 0.658)), url("../assets/img/begin-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -196,7 +196,7 @@ body.index-page {
   align-items: flex-end;
   min-height: 99vh;
   padding: 2px;
-  background-image: url("../../../assets/img/elephant-hero.jpg");
+  background-image: url("../assets/img/elephant-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   list-style: initial;
@@ -250,7 +250,7 @@ body.index-page {
   min-height: 99vh;
   padding: 2px;
   height: calc(100vh - 7.4rem);
-  background-image: url("../../../assets/img/monkey-hero.jpg");
+  background-image: url("../assets/img/monkey-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -284,7 +284,7 @@ body.index-page {
   text-align: center;
   min-height: 45vw;
   gap: 5rem;
-  background: linear-gradient(rgba(165, 71, 71, 0.5), rgba(128, 224, 109, 0.5)), url("../../../assets/img/monkey-section.jpg");
+  background: linear-gradient(rgba(165, 71, 71, 0.5), rgba(128, 224, 109, 0.5)), url("../assets/img/monkey-section.jpg");
   background-repeat: no-repeat;
   opacity: 0.85;
   transition: 800ms;
@@ -339,7 +339,7 @@ body.index-page {
   align-items: flex-end;
   min-height: 96vh;
   padding: 2rem;
-  background-image: url("../../../assets/img/dog-hero.jpg");
+  background-image: url("../assets/img/dog-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

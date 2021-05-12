@@ -8,7 +8,7 @@
   padding: 2px;
   height: calc(100vh - 7.4rem);
 
-  background-image: url("../../../assets/img/monkey-hero.jpg");
+  background-image: url("../assets/img/monkey-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -46,7 +46,7 @@
   min-height: 45vw;
   gap: 5rem;
   background: linear-gradient(rgba(165, 71, 71, 0.5), rgba(128, 224, 109, 0.5)),
-    url("../../../assets/img/monkey-section.jpg");
+    url("../assets/img/monkey-section.jpg");
   background-repeat: no-repeat;
   opacity: 0.85;
   transition: 800ms;
